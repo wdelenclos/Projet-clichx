@@ -2,8 +2,7 @@
     "private": true,
     "dependencies": {
         "classnames": "^2.1.5",
-        "director": "^1.2.0",
-        "jquery": "2.2.4"
+        "director": "^1.2.0"
     },
     "devDependencies": {
         "browser-sync": "x"
