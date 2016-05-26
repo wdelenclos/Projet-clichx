@@ -3,7 +3,7 @@
     "dependencies": {
         "classnames": "^2.1.5",
         "director": "^1.2.0",
-        "react": "^0.13.3"
+        "jquery": "2.2.4"
     },
     "devDependencies": {
         "browser-sync": "x"
