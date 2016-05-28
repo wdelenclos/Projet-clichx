@@ -1,15 +1,23 @@
+/* Fonts */
+
+@font-face{
+    font-family : "Quicksand";
+    src : url('font/Quicksand-Light.ttf');
+}
+
 /* Cadre application */
 
 .appli {
     position: relative;
     width: 360px;
     height: 640px;
-    background: -webkit-linear-gradient(284deg, rgb(194, 28, 97) 0%, rgb(241, 78, 69) 59%, rgb(244, 151, 78) 99%, rgb(244, 153, 79) 100%);
-    background: -o-linear-gradient(284deg, rgb(194, 28, 97) 0%, rgb(241, 78, 69) 59%, rgb(244, 151, 78) 99%, rgb(244, 153, 79) 100%);
-    background: -ms-linear-gradient(284deg, rgb(194, 28, 97) 0%, rgb(241, 78, 69) 59%, rgb(244, 151, 78) 99%, rgb(244, 153, 79) 100%);
-    background: -moz-linear-gradient(284deg, rgb(194, 28, 97) 0%, rgb(241, 78, 69) 59%, rgb(244, 151, 78) 99%, rgb(244, 153, 79) 100%);
-    background: linear-gradient(166deg, rgb(194, 28, 97) 0%, rgb(241, 78, 69) 59%, rgb(244, 151, 78) 99%, rgb(244, 153, 79) 100%);
+    background: -webkit-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(244, 153, 79) 100%);
+    background: -o-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(244, 153, 79) 100%);
+    background: -ms-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(244, 153, 79) 100%);
+    background: -moz-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(244, 153, 79) 100%);
+    background: linear-gradient(166deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(244, 153, 79) 100%);
     margin: 0 auto;
+    font-family: 'Quicksand';
 }
 
 /* Loading  Page */
@@ -80,4 +88,24 @@
     border: none;
 }
 
-/*
+/* Corpus */
+
+.appli h2{
+    margin: 40px 0 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+.appli h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+.appli .card{
+    margin: 0 auto;
+    background-color: #fff;
+    width: 85%;
+    height: 370px;
+    border-radius: 15px;
+}
