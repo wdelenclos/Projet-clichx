@@ -6,8 +6,8 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
     <title>Cliché | Partage ton cliché !</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
     <!-- Moteur -->
 
 
@@ -18,30 +18,39 @@
 
     <!-- Loading  Page -->
     <section class="loading">
-        <img src="img/logoC.png" alt="">
-        <img src="img/logoCross.png" alt="">
+        <img src="styles/img/logoC.png" alt="">
+        <img src="styles/img/logoCross.png" alt="">
     </section>
 
     <!-- Main Screen -->
     <section class="main">
         <header>
             <ul>
-                <li><button id="menu"><img src="img/burger.png" alt=""></button></li>
-                <li><img class="logo" src="img/logoFull.png" alt="Cliché"></li>
-                <li><button id="profile"><img src="img/profil.png" alt=""></button></li>
+                <li><button id="menu"><img src="styles/img/burger.png" alt=""></button></li>
+                <li><img class="logo" src="styles/img/logoFull.png" alt="Cliché"></li>
+                <li><button id="profile"><img src="styles/img/profil.png" alt=""></button></li>
             </ul>
         </header>
 
+        <h2>Clichés en vrac</h2>
+
+        <div class="card">
+            <h3>Esther est Normande</h3>
+        </div>
+
+
+        <div class="modes">
+            <button class="active"><img src="styles/img/vrac.png" alt=""></button>
+            <button><img src="styles/img/classement.png" alt=""></button>
+        </div>
     </section>
-
-
 </section>
 
 
 
 <!-- Router -->
 <script src="node_modules/director/build/director.js"></script>
-<script src="moteur.js"></script>
+<script src="script/moteur.js"></script>
 
 </body>
 </html>
