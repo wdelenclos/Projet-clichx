@@ -57,7 +57,7 @@
 }
 .appli header ul li{
     position: absolute;
- }
+}
 .appli header ul li:first-child{
     top: 25px;
     left: 15px;
@@ -87,7 +87,6 @@
 }
 
 /* Corpus */
-
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -121,14 +120,12 @@
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
-
 .appli h2{
     margin: 40px 0 50px;
     color: #fff;
     text-align: center;
     font-size: 25px;
 }
-
 .appli h3{
     text-align: center;
     font-weight: bold;
@@ -140,12 +137,12 @@
 }
 .appli .card{
     margin: 0 auto;
+    position: relative;
     background-color: #fff;
     width: 85%;
     height: 370px;
     border-radius: 15px;
 }
-
 .appli .quote {
     width: 30px;
 }
@@ -155,7 +152,6 @@
 .appli .quote2{
     margin: 10px 0 25px 240px;
 }
-
 .appli .infos{
     font-weight: bold;
     padding: 0 35px;
@@ -165,13 +161,53 @@
     width: 18px;
     float: right;
 }
-
 .appli .nbcliche{
     color: #2d9598;
     float: right;
     margin-right: 30px;
 }
+.appli .vote{
+    position: absolute;
+    bottom:0;
+}
+.appli .vote button{
+    float: left;
+    width: 153px;
+    height: 40px;
+    border: 0;
+    font-family: 'Quicksand';
+    background-color:  #fff;
+    font-weight: bold;
+}
+.appli .vote button:hover{
+   background-color:  #66b2b4;
+    color: #fff;
+}
+.appli .vote button:first-child{
+    border-bottom-left-radius: 15px;
+}
+.appli .vote button:last-child{
+    border-bottom-right-radius: 15px;
+}
 
+.appli .categorie img{
+    position: absolute;
+    bottom: 25px;
+    left: -10px;
+    width: 70px;
+}
+.appli .categorie p{
+    margin-top: 20px;
+    padding: 0 35px;
+    max-width: 306px;
+    max-height: 40px;
+
+}
+.appli .categorie small{
+    margin-right: 10px;
+    font-weight: bold;
+    color: #f16943;
+}
 /* Menu Bas */
 .appli .modes{
     position: absolute;
