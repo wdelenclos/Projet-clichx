@@ -6,7 +6,6 @@
 }
 
 /* Cadre application */
-
 .appli {
     position: relative;
     width: 360px;
@@ -18,9 +17,10 @@
     background: linear-gradient(166deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(243, 121, 100) 100%);
     margin: 0 auto;
     font-family: 'Quicksand';
+    letter-spacing: 1.5px;
 }
 
-/* Loading  Page */
+/* ----------- Loading  Page -------------- */
 
 
 .appli .loading img:first-child{
@@ -45,8 +45,7 @@
     left: 45.2%;
 }
 
-
-/* Main Screen */
+/*  ---------- Main Screen --------------*/
 
 
 /* Header */
@@ -70,7 +69,6 @@
 .appli header ul li:last-child{
     right: 15px;
     top: 24px;
-
 }
 .appli header ul li:last-child img{
     width: 20px;
@@ -90,6 +88,40 @@
 
 /* Corpus */
 
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: #66b2b4;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #2d9598;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+    border: 0px none #ffffff;
+    border-radius: 53px;
+}
+::-webkit-scrollbar-track:hover {
+    background: #fff;
+}
+::-webkit-scrollbar-track:active {
+    background: #abd5d6;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 .appli h2{
     margin: 40px 0 50px;
     color: #fff;
@@ -101,6 +133,10 @@
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+    padding: 0 35px;
+    line-height: 27px;
+    max-height: 110px;
+    overflow: auto;
 }
 .appli .card{
     margin: 0 auto;
@@ -108,6 +144,32 @@
     width: 85%;
     height: 370px;
     border-radius: 15px;
+}
+
+.appli .quote {
+    width: 30px;
+}
+.appli .quote:first-child{
+    margin: 40px 0 10px 30px;
+}
+.appli .quote2{
+    margin: 10px 0 25px 240px;
+}
+
+.appli .infos{
+    font-weight: bold;
+    padding: 0 35px;
+}
+.appli .infos img{
+    margin-right: -55px;
+    width: 18px;
+    float: right;
+}
+
+.appli .nbcliche{
+    color: #2d9598;
+    float: right;
+    margin-right: 30px;
 }
 
 /* Menu Bas */
