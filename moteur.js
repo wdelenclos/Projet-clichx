@@ -1,57 +1,40 @@
 /**
  * Created by Wladimir on 26/05/2016.
  */
+
+
+
+$('.loading').fadeOut(); // Cache le loading
+
 $( document ).ready(function() {
     var modif = document.lastModified;
     console.log( "Jquery chargé, version " +jQuery.fn.jquery + " Dernière modif:" + modif );
 });
-
-var Conclave=(function(){
-    var buArr =[],arlen;
-    return {
-        init:function(){
-            this.addCN();this.clickReg();
-        },
-        addCN:function(){
-            var buarr=["holder_bu_awayL2","holder_bu_awayL1","holder_bu_center","holder_bu_awayR1","holder_bu_awayR2"];
-            for(var i=1;i<=buarr.length;++i){
-                $("#bu"+i).removeClass().addClass(buarr[i-1]+" holder_bu");
-            }
-        },
-        clickReg:function(){
-            $(".holder_bu").each(function(){
-                buArr.push($(this).attr('class'))
-            });
-            arlen=buArr.length;
-            for(var i=0;i<arlen;++i){
-                buArr[i]=buArr[i].replace(" holder_bu","")
-            };
-            $(".holder_bu").click(function(buid){
-                var me=this,id=this.id||buid,joId=$("#"+id),joCN=joId.attr("class").replace(" holder_bu","");
-                var cpos=buArr.indexOf(joCN),mpos=buArr.indexOf("holder_bu_center");
-                if(cpos!=mpos){
-                    tomove=cpos>mpos?arlen-cpos+mpos:mpos-cpos;
-                    while(tomove){
-                        var t=buArr.shift();
-                        buArr.push(t);
-                        for(var i=1;i<=arlen;++i){
-                            $("#bu"+i).removeClass().addClass(buArr[i-1]+" holder_bu");
-                        }
-                        --tomove;
-                    }
-                }
-            })
-        },
-        auto:function(){
-            for(i=1;i<=1;++i){
-                $(".holder_bu").delay(4000).trigger('click',"bu"+i).delay(4000);
-                console.log("called");
-            }
-        }
-    };
-})();
-
 $(document).ready(function(){
-    window['conclave']=Conclave;
-    Conclave.init();
-})
+
+    $(".buddy").on("swiperight",function(){
+        $(this).addClass('rotate-left').delay(700).fadeOut(1);
+        $('.buddy').find('.status').remove();
+
+        $(this).append('<div class="status like">Like!</div>');
+        if ( $(this).is(':last-child') ) {
+            $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+        } else {
+            $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+        }
+    });
+
+    $(".buddy").on("swipeleft",function(){
+        $(this).addClass('rotate-right').delay(700).fadeOut(1);
+        $('.buddy').find('.status').remove();
+        $(this).append('<div class="status dislike">Dislike!</div>');
+
+        if ( $(this).is(':last-child') ) {
+            $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+            alert(' ');
+        } else {
+            $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+        }
+    });
+
+});

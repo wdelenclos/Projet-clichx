@@ -2,34 +2,47 @@
 <html lang="fr" data-framework="react">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
     <title>Cliché | Partage ton cliché !</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="assets/jquery-1.12.2.min.js"></script>
     <!-- Moteur -->
-    <script src="moteur.js"></script>
+
+
 </head>
 <body>
 
 <section class="appli">
 
+    <!-- Loading  Page -->
+    <section class="loading">
+        <img src="img/logoC.png" alt="">
+        <img src="img/logoCross.png" alt="">
+    </section>
 
-        <div id="bu1"><p class="txt_Center txt_h1">1</p></div>
-        <div id="bu2"><p class="txt_Center txt_h1">2</p></div>
-        <div id="bu3"><p class="txt_Center txt_h1">3</p></div>
-        <div id="bu4"><p class="txt_Center txt_h1">4</p></div>
-        <div id="bu5"><p class="txt_Center txt_h1">5</p></div>
+    <!-- Main Screen -->
+    <section class="main">
+        <header>
+            <ul>
+                <li><button id="menu"></button></li>
+                <li><img src="img/logoFull.png" alt=""></li>
+                <li><button id="profile"></button></li>
+            </ul>
+        </header>
 
-    <script>Conclave.auto()</script>
+    </section>
+
 
 </section>
 
 
 
-
 <!-- Router -->
 <script src="node_modules/director/build/director.js"></script>
-
+<script src="moteur.js"></script>
 
 </body>
 </html>
