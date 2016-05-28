@@ -20,7 +20,7 @@
     font-family: 'Quicksand';
 }
 
-/* Loading  Page */
+/* ----------- Loading  Page -------------- */
 
 
 .appli .loading img:first-child{
@@ -45,8 +45,7 @@
     left: 45.2%;
 }
 
-
-/* Main Screen */
+/*  ---------- Main Screen --------------*/
 
 
 /* Header */
@@ -70,7 +69,6 @@
 .appli header ul li:last-child{
     right: 15px;
     top: 24px;
-
 }
 .appli header ul li:last-child img{
     width: 20px;
@@ -89,7 +87,6 @@
 }
 
 /* Corpus */
-
 .appli h2{
     margin: 40px 0 50px;
     color: #fff;
@@ -129,3 +126,4 @@
 .appli .modes button img{
     width: 26px;
 }
+
