@@ -171,10 +171,30 @@
     bottom:0;
 }
 .appli .vote button{
-    width: 149px;
+    float: left;
+    width: 153px;
     height: 40px;
-    margin: 0;
     border: 0;
+    font-family: 'Quicksand';
+    background-color:  #fff;
+    font-weight: bold;
+}
+.appli .vote button:hover{
+   background-color:  #66b2b4;
+    color: #fff;
+}
+.appli .vote button:first-child{
+    border-bottom-left-radius: 15px;
+}
+.appli .vote button:last-child{
+    border-bottom-right-radius: 15px;
+}
+
+.appli .categorie img{
+    position: absolute;
+    bottom: 25px;
+    left: -10px;
+    width: 70px;
 }
 
 /* Menu Bas */
