@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76cdc743-dfca-49d9-9f5e-d278382ec0f6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Projet.Cliche.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/Wladimir.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Projet_Cliche_node_modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/jquery-1.12.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Burger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Ellipse 2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/checked copie 2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/classement.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logoC.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logoCross.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logoFull.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/profil.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/vrac.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/moteur.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/img/Burger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/img/Ellipse 2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/img/checked copie 2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/img/classement.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/img/logoC.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/img/logoCross.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/img/logoFull.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/img/profil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/img/vrac.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -48,8 +39,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="-71">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -249,7 +240,7 @@
       <workItem from="1464124218586" duration="2216000" />
       <workItem from="1464248031073" duration="7926000" />
       <workItem from="1464429248114" duration="4933000" />
-      <workItem from="1464455267364" duration="3511000" />
+      <workItem from="1464455267364" duration="3734000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <created>1464126208999</created>
@@ -262,7 +253,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18586000" />
+    <option name="totallyTimeSpent" value="18809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -443,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="-71">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
           <folding />
         </state>
       </provider>
