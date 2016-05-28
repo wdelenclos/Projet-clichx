@@ -196,7 +196,18 @@
     left: -10px;
     width: 70px;
 }
+.appli .categorie p{
+    margin-top: 20px;
+    padding: 0 35px;
+    max-width: 306px;
+    max-height: 40px;
 
+}
+.appli .categorie small{
+    margin-right: 10px;
+    font-weight: bold;
+    color: #f16943;
+}
 /* Menu Bas */
 .appli .modes{
     position: absolute;
