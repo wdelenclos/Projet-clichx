@@ -1,13 +1,14 @@
 {
-    "private": true,
-    "dependencies": {
-        "classnames": "^2.1.5",
-        "director": "^1.2.0"
-    },
-    "devDependencies": {
-        "browser-sync": "x"
-    },
-    "scripts": {
-        "start": "browser-sync start --server --files \"**,**/*\" --no-notify --browser"
-    }
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.1.5",
+    "director": "^1.2.0",
+    "jquery-touchswipe": "^1.6.15"
+  },
+  "devDependencies": {
+    "browser-sync": "x"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --files \"**,**/*\" --no-notify --browser"
+  }
 }

@@ -1,3 +1,9 @@
+body{
+    width: 360px;
+    height: 640px;
+
+}
+
 /* Fonts */
 
 @font-face{
@@ -8,8 +14,8 @@
 /* Cadre application */
 .appli {
     position: relative;
-    width: 360px;
-    height: 640px;
+    width: 100%;
+    height: 100%;
     background: -webkit-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(243, 121, 100) 100%);
     background: -o-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(243, 121, 100) 100%);
     background: -ms-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(243, 121, 100) 100%);
@@ -21,7 +27,9 @@
 }
 
 /* ----------- Loading  Page -------------- */
-
+.appli .main{
+    display: none;
+}
 
 .appli .loading img:first-child{
     position: absolute;
@@ -120,6 +128,27 @@
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
+
+.appli .card{
+    margin-left: 28px;
+    position: absolute;
+    background-color: #fff;
+    width: 85%;
+    height: 55%;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.appli .tampon{
+    position: absolute;
+    text-align: center;
+
+}
+.appli .tampon img{
+    display: none;
+    margin-top: 60px;
+    width: 60%;
+}
 .appli h2{
     margin: 40px 0 50px;
     color: #fff;
@@ -135,20 +164,12 @@
     max-height: 110px;
     overflow: auto;
 }
-.appli .card{
-    margin: 0 auto;
-    position: relative;
-    background-color: #fff;
-    width: 85%;
-    height: 370px;
-    border-radius: 15px;
-}
+
 .appli .quote {
     width: 30px;
+    margin: 30px 0 10px 30px;
 }
-.appli .quote:first-child{
-    margin: 40px 0 10px 30px;
-}
+
 .appli .quote2{
     margin: 10px 0 25px 240px;
 }
@@ -226,4 +247,29 @@
 }
 .appli .modes button img{
     width: 26px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 414px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .appli .modes button{
+
+        width: 50vw;
+
+    }
+    .appli .card {
+        width: 85vw;
+    }
+    .appli .vote button {
+        width: 42.5vw;
+    }
+
+
+
 }
