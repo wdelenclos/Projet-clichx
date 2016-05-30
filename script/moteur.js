@@ -30,15 +30,25 @@ $('.loading').fadeOut(800); // Cache le loading
 $('.main').fadeIn(); // Affiche le premier écran
 
 
-// Boutons standards:
+// Boutons menu:
 $( "#menu" ).click(function() {
     $(".categories").animate({"margin-left": '+0vw'});
+    $(".darker").fadeIn();
 });
 $( "#closemenu" ).click(function() {
-    $(".categories").animate({"margin-left": '-45vw'});
+    $(".categories").animate({"margin-left": '-85vw'});
+    $(".darker").fadeOut();
+});
+$( "#profile" ).click(function() {
+    $(".profil").show();
 });
 
+
+
+// Gestionnaire des cartes:
 $(function() {
+
+    // Affichage du texte de vide
     function isEmpty(){
         var card = $(".card");
         if(card.length){
@@ -93,5 +103,20 @@ $(function() {
             }
         }
     });
-
 });
+
+
+$( ".modes" ).delegate( "#btnvrac", "click", function() {
+    $('#btnvrac').addClass('active');
+    $('#btnclass').removeClass('active');
+    $('#class').animate({"margin-left": '+190vh'}).hide();
+    $('#vrac').show().animate({"margin-left": '0px'});
+});
+$( ".modes" ).delegate( "#btnclass", "click", function() {
+        $('#btnclass').addClass('active');
+        $('#btnvrac').removeClass('active');
+                $('#vrac').animate({"margin-left": '+190vh'}).hide();
+        $('#class').show().animate({"margin-left": '0px'});
+});
+
+
