@@ -8,20 +8,37 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="script/jquery-1.12.2.min.js"></script>
     <script type="text/javascript" src="script/jquery.touchSwipe.min.js"></script>
-    <!-- Data -->
+    <!-- Base de donnée simulée -->
     <script src="script/data.js"></script>
-
 </head>
 <body>
 
 <section class="appli">
+    <div class="categories">
+        <img src="styles/img/cancel.png">
+        <h2>Catégories</h2>
+        <div class="rechercher">
+            <input type="text" placeholder="Rechercher">
+        </div>
+        <ul>
+            <a href="#"><li>Toutes les catégories</li></a>
+            <a href="#"><li>Classique</li></a>
+            <a href="#"><li>Gastronomie</li></a>
+            <a href="#"><li>Français</li></a>
+            <a href="#"><li>Humour</li></a>
+        </ul>
+    </div>
 
     <!-- Loading  Page -->
     <section class="loading">
         <img src="styles/img/logoC.png" alt="">
         <img src="styles/img/logoCross.png" alt="">
     </section>
-
+    <!-- Empty -->
+    <section class="empty">
+        <img src="styles/img/logoCross.png" alt="">
+        <p>Oups, plus de clichés!</p>
+    </section>
     <!-- Main Screen -->
     <section class="main">
         <header>
@@ -35,26 +52,17 @@
                 </li>
             </ul>
         </header>
-
         <h2>Clichés en vrac</h2>
-
     <div class="cardplace">
-
     </div>
-
-
-
         <div class="modes">
             <button class="active"><img src="styles/img/vrac.png" alt=""></button>
             <button><img src="styles/img/classement.png" alt=""></button>
         </div>
     </section>
 </section>
-
-
 <!-- Moteur de l'app -->
-<script src="script/functions.js"></script>
+<script src="script/view.js"></script>
 <script src="script/moteur.js"></script>
-
 </body>
 </html>
