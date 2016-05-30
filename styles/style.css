@@ -282,7 +282,81 @@ body{
 }
 
 
-/* RESPONSIVE */
+/*---------------CATÉGORIES-----------------*/
+
+
+.appli .categories{
+    margin-left: -45vh;
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 100%;
+    background: #FFF;
+    border-top-right-radius: 15px;
+}
+
+.appli .categories h2{
+    color: #222;
+    letter-spacing: -1px;
+    font-weight: bold;
+    padding-top: 0px;
+}
+
+.appli .categories img{
+    width: 17px;
+    padding-top: 27px;
+    padding-right: 13px;
+}
+.appli .categories button{
+    background-color: #fff;
+    float: right;
+    border: 0;
+    cursor: pointer;
+}
+
+.appli .categories .rechercher{
+    width: 75%;
+    margin: auto;
+}
+
+.appli .categories input{
+    border-radius: 15px;
+    background: #e6e6e6;
+    -webkit-appearance: none;
+    border: none;
+    height: 35px;
+    width: 100%;
+    font-family: 'Quicksand';
+
+}
+
+.appli .categories input::-webkit-input-placeholder{
+    padding-left: 15px;
+}
+
+
+.appli .categories ul{
+    width: 70%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.appli .categories ul a{
+    text-decoration: none;
+}
+
+.appli .categories ul li{
+    color: #222;
+    font-weight: 800;
+    letter-spacing: -2px;
+    font-size: 20px;
+    padding-bottom: 15px;
+    line-height: 25px;
+}
+
+
+
+/*--------------- RESPONSIVE-----------------*/
 
 @media screen and (max-width: 414px) {
     body {
@@ -299,3 +373,4 @@ body{
         width: 42.5vw;
     }
 }
+

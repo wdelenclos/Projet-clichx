@@ -30,7 +30,13 @@ $('.loading').fadeOut(800); // Cache le loading
 $('.main').fadeIn(); // Affiche le premier écran
 
 
-
+// Boutons standards:
+$( "#menu" ).click(function() {
+    $(".categories").animate({"margin-left": '+0vw'});
+});
+$( "#closemenu" ).click(function() {
+    $(".categories").animate({"margin-left": '-45vw'});
+});
 
 $(function() {
     function isEmpty(){
