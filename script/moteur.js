@@ -35,7 +35,7 @@ $( "#menu" ).click(function() {
     $(".categories").animate({"margin-left": '+0vw'});
 });
 $( "#closemenu" ).click(function() {
-    $(".categories").animate({"margin-left": '-145vw'});
+    $(".categories").animate({"margin-left": '-85vw'});
 });
 
 // Gestionnaire des cartes:

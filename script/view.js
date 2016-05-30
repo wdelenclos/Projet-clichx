@@ -48,10 +48,29 @@ generateurCartes();
 function generateurClassment(){
     var stock = localStorage.getItem('cliches');
     var cliche = JSON.parse(stock);
-    
-    for(var i = 1; i < cliche.length; i++){
-        if (cliche[i])
+    var sortBy = function(field, reverse, primer){
+
+        var key = function (x) {return primer ? primer(x[field]) : x[field]};
+
+        return function (a,b) {
+            var A = key(a), B = key(b);
+            return ((A > B) ? -1 : (A < B) ? +1 : 0) * [-1,1][+!!reverse];
+        }
     }
+
+    var clichetrie  = cliche.sort(sortBy('nbvote', true, parseInt));
+
+
+    for (var i = 0; i < clichetrie.length; i++) {
+        var streVar = "";
+        streVar += "<div class=\"listcard\" id=\"lcard"+[i]+"\" >";
+        streVar += "<h3>" + clichetrie[i].quote +"</h3>";
+        streVar += "<div class=\"infos\"> "+ clichetrie[i].author +" <span class=\"nbcliche\">" + clichetrie[i].nbvote +"<\/span><img src=\"styles\/img\/checked.png\" alt=\"clichés\"><\/div>;";
+        streVar += "</div>";
+
+        $(".listplace").append(streVar);
+    }
+
     
 }
 generateurClassment();
