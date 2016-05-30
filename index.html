@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <script src="script/jquery-1.12.2.min.js"></script>
-    <!-- Moteur -->
-
+    <script type="text/javascript" src="script/jquery.touchSwipe.min.js"></script>
+    <!-- Data -->
+    <script src="script/data.js"></script>
 
 </head>
 <body>
@@ -25,33 +26,22 @@
     <section class="main">
         <header>
             <ul>
-                <li><button id="menu"><img src="styles/img/burger.png" alt=""></button></li>
+                <li>
+                    <button id="menu"><img src="styles/img/burger.png" alt=""></button>
+                </li>
                 <li><img class="logo" src="styles/img/logoFull.png" alt="Cliché"></li>
-                <li><button id="profile"><img src="styles/img/profil.png" alt=""></button></li>
+                <li>
+                    <button id="profile"><img src="styles/img/profil.png" alt=""></button>
+                </li>
             </ul>
         </header>
 
         <h2>Clichés en vrac</h2>
 
-        <div class="card">
+    <div class="cardplace">
 
+    </div>
 
-            <img class="quote" src="styles/img/quote1.png" alt="quote">
-            <h3>Les Francais mangent tous des grenoilles, surtout à Paris .</h3>
-            <img class="quote quote2" src="styles/img/quote2.png" alt="quote">
-            <div class="infos">Tomdu92 <span class="nbcliche"> 192</span><img src="styles/img/checked.png" alt="clichés"></div>
-
-            
-            <div class="categorie">
-
-                <p><small>Pays</small><small>Gastronomie</small></p>
-            </div>
-            <div class="vote">
-            <button>Je passe</button>
-            <button>Cliché</button>
-            </div>
-
-        </div>
 
 
         <div class="modes">
@@ -62,8 +52,8 @@
 </section>
 
 
-
-<!-- Router -->
+<!-- Moteur de l'app -->
+<script src="script/functions.js"></script>
 <script src="script/moteur.js"></script>
 
 </body>

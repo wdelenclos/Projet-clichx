@@ -2,39 +2,60 @@
  * Created by Wladimir on 26/05/2016.
  */
 
+// MODE DEMO --
+sleep(0); // Ecran de chargement en secondes
+$('.loading').fadeOut(800); // Cache le loading
+
+$('.main').fadeIn(); // Affiche le premier écran
+affichageDesCartesSwipe();
+
+$(function() {
 
 
-$('.loading').fadeOut(); // Cache le loading
+    function gliss(direction) {
 
-$( document ).ready(function() {
-    var modif = document.lastModified;
-    console.log( "Jquery chargé, version " +jQuery.fn.jquery + " Dernière modif:" + modif );
-});
-$(document).ready(function(){
+        if(direction == "left"){
 
-    $(".card").on("swiperight",function(){
-        $(this).addClass('rotate-left').delay(700).fadeOut(1);
-        $('.card').find('.status').remove();
+            $(".cardplace .tampon-left").last().fadeIn(120);
+            $(".cardplace .tampon-right").last().hide();
+            $(".cardplace .card").last().delay(300).animate({"margin-left": '-700'}, function () {
+              $(this).remove();
+            });
+        }
+        if(direction == "right"){
+            $(".cardplace .tampon-right").last().fadeIn(120);
+            $(".cardplace .tampon-left").last().hide();
+            $(".cardplace .card").last().delay(300).animate({"margin-left": '+500'}, function () {
+                $(this).remove();
+            });
+        }
+    }
 
-        $(this).append('<div class="status like">Like!</div>');
-        if ( $(this).is(':last-child') ) {
-            $('.card:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
-        } else {
-            $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+
+    // Au clic --------------------------------------------------------
+
+    $( ".cardplace" ).delegate( "#vote-left", "click", function() {
+        gliss("left");
+    });
+    $( ".cardplace" ).delegate( "#vote-right", "click", function() {
+        gliss("right");
+    });
+
+
+
+    // AU SWAP ---------------------------------------------------------
+    $(".card").swipe( {
+
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+
+            if(direction == "left"){
+                gliss("left");
+            }
+            if(direction == "right"){
+                gliss("right");
+            }
         }
     });
 
-    $(".card").on("swipeleft",function(){
-        $(this).addClass('rotate-right').delay(700).fadeOut(1);
-        $('.card').find('.status').remove();
-        $(this).append('<div class="status dislike">Dislike!</div>');
-
-        if ( $(this).is(':last-child') ) {
-            $('.card:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
-            alert(' ');
-        } else {
-            $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-        }
-    });
-
 });
+
