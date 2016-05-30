@@ -30,15 +30,18 @@ $('.loading').fadeOut(800); // Cache le loading
 $('.main').fadeIn(); // Affiche le premier écran
 
 
-// Boutons standards:
+// Boutons menu:
 $( "#menu" ).click(function() {
     $(".categories").animate({"margin-left": '+0vw'});
 });
 $( "#closemenu" ).click(function() {
-    $(".categories").animate({"margin-left": '-45vw'});
+    $(".categories").animate({"margin-left": '-145vw'});
 });
 
+// Gestionnaire des cartes:
 $(function() {
+
+    // Affichage du texte de vide
     function isEmpty(){
         var card = $(".card");
         if(card.length){
@@ -93,5 +96,4 @@ $(function() {
             }
         }
     });
-
 });

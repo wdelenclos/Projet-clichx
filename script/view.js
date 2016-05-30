@@ -43,3 +43,15 @@ function generateurCartes(){
     }
 }
 generateurCartes();
+
+
+function generateurClassment(){
+    var stock = localStorage.getItem('cliches');
+    var cliche = JSON.parse(stock);
+    
+    for(var i = 1; i < cliche.length; i++){
+        if (cliche[i])
+    }
+    
+}
+generateurClassment();
