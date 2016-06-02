@@ -14,6 +14,8 @@
 <body>
 
 <section class="appli">
+
+    <!-- Catégories -->
     <div class="categories">
         <button id="closemenu"><img src="styles/img/cancel.png"></button>
         <h2>Catégories</h2>
@@ -38,7 +40,7 @@
             </a>
         </ul>
     </div>
-
+    <div class="darker"></div>
     <!-- Loading  Page -->
     <section class="loading">
         <img src="styles/img/logoC.png" alt="">
@@ -49,8 +51,10 @@
         <img src="styles/img/logoCross.png" alt="">
         <p>Oups, plus de clichés!</p>
     </section>
+
     <!-- Main Screen -->
     <section class="main">
+
         <header>
             <ul>
                 <li>
@@ -62,11 +66,56 @@
                 </li>
             </ul>
         </header>
+
+        <!-- Profile -->
+        <div class="profil">
+            <div class="profil-header">
+                <h2>Eazy-H</h2>
+                <h3><img src="styles/img/pin.png" class="first-img">Compton, California</h3>
+                <div class="profil-infos">
+                    <div class="profil-info-left">
+                        <p>45<img src="styles/img/com.png"></p>
+                    </div>
+                    <div class="profil-info-right">
+                        <p>298<img src="styles/img/check.png"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="profil-picture">
+                <div class="profil-img"></div>
+            </div>
+            <div class="profil-content">
+                <div class="quote">
+                    <img src="styles/img/guil-left.png">
+                    <p>Les Français ne savent pas conduire</p>
+                    <img src="styles/img/guil-right.png">
+                </div>
+                <div class="email">
+                    <h3>Email</h3>
+                    <p>eazyhrv@gmail.com</p>
+                </div>
+                <div class="level">
+                    <h3>Niveau</h3>
+                    <div class="level-bar">
+                        <p>Avancé</p>
+                        <div class="level-progress"></div>
+                    </div>
+                </div>
+                <div class="view">
+                    <p>Voir ses clichés</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Vrac -->
         <div id="vrac">
             <h2>Clichés en vrac</h2>
             <div class="cardplace">
             </div>
         </div>
+
+        <!-- Classement -->
         <div id="class">
             <h2>Classement des clichés</h2>
             <div class="listplace">
@@ -76,12 +125,9 @@
 
 
 
-
-
-
         <div class="modes">
-            <button class="active"><img src="styles/img/vrac.png" alt=""></button>
-            <button><img src="styles/img/classement.png" alt=""></button>
+            <button id="btnvrac" class="active"><img src="styles/img/vrac.png" alt=""></button>
+            <button id="btnclass"><img src="styles/img/classement.png" alt=""></button>
         </div>
     </section>
 </section>
