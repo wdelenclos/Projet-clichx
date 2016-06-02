@@ -150,6 +150,12 @@ function stockageCliche() {
             'categories': ['Geek'],
             'nbvote': 96
         },
+        {
+            'quote': 'Votre pub ici',
+            'author': 'Publicitaire',
+            'categories': ['Publicité'],
+            'nbvote': '-'
+        },
     ];
 
     // Initialisation du menu dans le localstorage
