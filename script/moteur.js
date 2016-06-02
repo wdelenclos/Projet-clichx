@@ -40,7 +40,7 @@ $( "#closemenu" ).click(function() {
     $(".darker").fadeOut();
 });
 $( "#profile" ).click(function() {
-    $(".profil").show();
+    $(".profile").animate({marginLeft: "-=100%"});
 });
 
 

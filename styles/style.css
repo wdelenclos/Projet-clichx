@@ -116,6 +116,16 @@ body{
 .appli header ul li:last-child img{
     width: 20px;
 }
+
+.appli header ul li #ajout img{
+    margin-top: 23px;
+    position: absolute;
+    left: 295px;
+    width: 21px;
+    top: 2px;
+}
+
+
 .appli header ul li .logo{
     margin-top: 15px;
     position: absolute;
@@ -123,6 +133,7 @@ body{
     width: 100px;
     top: 2px;
 }
+
 .appli header button{
     cursor:pointer;
     background-color: #fff ;
@@ -588,6 +599,109 @@ body{
     padding-top: 11px;
     text-align: center;
 }
+
+/*--------------- PUBLIER-----------------*/
+.appli .publier{
+    width: 100%;
+    height: 81.3%;
+    position: absolute;
+    background: -webkit-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(243, 121, 100) 100%);
+    background: -o-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(243, 121, 100) 100%);
+    background: -ms-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(243, 121, 100) 100%);
+    background: -moz-linear-gradient(284deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(243, 121, 100) 100%);
+    background: linear-gradient(166deg, rgb(231, 66, 120) 0%, rgb(242, 110, 100) 59%, rgb(244, 151, 78) 99%, rgb(243, 121, 100) 100%);
+    z-index: 3;
+}
+
+.appli .publier .box-cliche{
+    background: #FFF;
+    width: 80%;
+    height: 45%;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.appli .publier .box-cliche .box-cliche-container{
+    margin: auto;
+    width: 90%;
+}
+
+.appli .publier .box-cliche textarea{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    width: 100%;
+    height: 70px;
+    outline: none;
+    resize: none;
+    color: #7d7c7c;
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-family: 'Quicksand';
+}
+
+.appli .publier .box-cliche .box-cliche-footer{
+    background: #f3f2f2;
+    width: 100%;
+    height: 63%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.appli .publier .box-cliche .box-cliche-footer ul{
+    padding-top: 10px;
+}
+
+.appli .publier .box-cliche .box-cliche-footer ul li{
+    display: inline-block;
+    color: #f16943;
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.appli .publier .box-cliche .box-cliche-footer img{
+    width: 15px;
+    float: left;
+    padding-right: 10px;
+}
+
+.appli .publier .box-cliche .box-cliche-footer p{
+    font-size: 11px;
+    float: left;
+    line-height: 1.4;
+}
+
+.appli .publier .box-cliche .box-cliche-footer .ajout-categorie{
+    padding-top: 10px;
+}
+
+.appli .publier .box-cliche .box-cliche-footer .view{
+    width: 60%;
+    height: 35px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    background: #61adaf;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 220px;
+    clear: both;
+}
+
+.appli .publier .box-cliche .box-cliche-footer .view p{
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    padding-top: 11px;
+    text-align: center;
+    float: none;
+}
+
 
 
 
