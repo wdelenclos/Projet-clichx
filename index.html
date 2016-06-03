@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="script/jquery-1.12.2.min.js"></script>
     <script type="text/javascript" src="script/jquery.touchSwipe.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <!-- Base de donnée simulée -->
     <script src="script/data.js"></script>
 </head>
@@ -22,22 +24,8 @@
         <div class="rechercher">
             <input type="text" placeholder="Rechercher">
         </div>
-        <ul>
-            <a href="#">
-                <li>Toutes les catégories</li>
-            </a>
-            <a href="#">
-                <li>Classique</li>
-            </a>
-            <a href="#">
-                <li>Gastronomie</li>
-            </a>
-            <a href="#">
-                <li>Français</li>
-            </a>
-            <a href="#">
-                <li>Humour</li>
-            </a>
+        <ul class="listcate">
+
         </ul>
     </div>
     <div class="darker"></div>
@@ -61,11 +49,40 @@
                     <button id="menu"><img src="styles/img/burger.png" alt=""></button>
                 </li>
                 <li><img class="logo" src="styles/img/logoFull.png" alt="Cliché"></li>
+                 <li>
+                    <button id="ajout"><img src="styles/img/ajout.png" alt=""></button>
+                </li>
                 <li>
                     <button id="profile"><img src="styles/img/profil.png" alt=""></button>
                 </li>
             </ul>
         </header>
+
+        <!-- Publier -->
+        <div class="publier">
+            <h2>Publier un cliché</h2>
+            <div class="box-cliche">
+                <div class="box-cliche-container">
+                    <textarea name="pulish" placeholder="Ecrire un cliché"></textarea>
+                </div>
+                <div class="box-cliche-footer">
+                    <div class="box-cliche-container">
+                        <ul>
+                           
+                        </ul>
+                        <div class="ajout-categorie">
+                            <img src="styles/img/diez.png">
+                            <input type="text" placeholder="Entrez une catégorie" id="autocomplete">
+                        </div>
+                    </div>
+                    <a href="#"><div class="view">
+                        <p>Publier</p>
+                    </div></a>
+                </div>
+            </div>
+
+
+        </div>
 
         <!-- Profile -->
         <div class="profil">
@@ -101,9 +118,9 @@
                         <div class="level-progress"></div>
                     </div>
                 </div>
-                <div class="view">
+                <a href="#"><div class="view">
                     <p>Voir ses clichés</p>
-                </div>
+                </div></a>
             </div>
         </div>
 

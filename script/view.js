@@ -26,6 +26,7 @@ function generateurCartes(){
         strVar += "";
         strVar += "";
         strVar += "<div class=\"categorie\">";
+        strVar +="<img src=\"styles\/img\/diese.png\" alt=\"Catégorie\">";
         strVar += "<p>";
         for (var j = 0; j < carte[i].categories.length; j++ ){
             strVar += "<small>" + carte[i].categories[j] +"<\/small>";
@@ -74,3 +75,19 @@ function generateurClassment(){
     
 }
 generateurClassment();
+
+function generateurdecategorie() {
+    var stock = localStorage.getItem('categories');
+    var cate = JSON.parse(stock);
+    var str = "";
+    for (var i = 0; i < cate.length; i++) {
+
+        str += '<a href="categorie-'+cate[i]+'"><li>'+cate[i]+'</li></a>'
+
+    }
+    $('.listcate').append(str);
+    $( "#autocomplete" ).autocomplete({
+        source: cate
+    });
+}
+generateurdecategorie();

@@ -2,7 +2,49 @@
  * Ce code contient les fonctions de génération en front ( MODEL ).
  */
 
-
+function stockageCategorie(){
+    var categorie = ['Toutes les catégories', 'Europe',
+        'Afrique',
+        'Amérique du Nord',
+        'Amérique du Sud',
+        'Asie',
+        'Océanie',
+        'Animaux',
+        'Art',
+        'Célébrités',
+        'Films',
+        'Musique',
+        'Livres',
+        'Gastronomie',
+        'Geek',
+        'Beauté',
+        'Santé',
+        'Histoire',
+        'Voyage',
+        'Évènement',
+        'Famille',
+        'Humour',
+        'Distraction',
+        'Mode',
+        'Média',
+        'Science',
+        'Nature',
+        'Sport',
+        'Politique',
+        'Travail',
+        'Transport',
+        'Apparence',
+        'Ville',
+        'Communication',
+        'Langues',
+        'Femmes',
+        'Hommes']
+    // Initialisation du menu dans le localstorage
+    var datacategorie = JSON.stringify(categorie);
+    localStorage.setItem('categories', datacategorie);
+    
+}
+stockageCategorie();
 
 function stockageCliche() {
     var clichebase = [
@@ -149,13 +191,7 @@ function stockageCliche() {
             'author': 'Lov87',
             'categories': ['Geek'],
             'nbvote': 96
-        },
-        {
-            'quote': 'Votre pub ici',
-            'author': 'Publicitaire',
-            'categories': ['Publicité'],
-            'nbvote': '-'
-        },
+        }
     ];
 
     // Initialisation du menu dans le localstorage
