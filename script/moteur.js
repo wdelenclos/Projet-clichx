@@ -39,10 +39,19 @@ $( "#closemenu" ).click(function() {
     $(".categories").animate({"margin-left": '-85vw'});
     $(".darker").fadeOut();
 });
-$( "#profile" ).click(function() {
-    $(".profile").animate({marginLeft: "-=100%"});
+$( ".main" ).delegate( "#profile", "click", function() {
+    $(".profil").animate({"margin-left": '0%'});
+    $("#profile").attr("id","profileActive");
 });
+$( ".main" ).delegate( "#profileActive", "click", function() {
+    $(".profil").animate({"margin-left": '100%'});
+    $("#profileActive").attr("id","profile");
+});
+$( ".main" ).delegate( "#ajout", "click", function() {
+    $(".profil").animate({"margin-left": '100%'});
+    $(".publier").slideToggle('fast');
 
+});
 
 
 // Gestionnaire des cartes:
@@ -107,15 +116,17 @@ $(function() {
 
 
 $( ".modes" ).delegate( "#btnvrac", "click", function() {
+    $(".publier").slideUp('fast');
     $('#btnvrac').addClass('active');
     $('#btnclass').removeClass('active');
     $('#class').animate({"margin-left": '+190vh'}).hide();
     $('#vrac').show().animate({"margin-left": '0px'});
 });
 $( ".modes" ).delegate( "#btnclass", "click", function() {
+        $(".publier").slideUp('fast');
         $('#btnclass').addClass('active');
         $('#btnvrac').removeClass('active');
-                $('#vrac').animate({"margin-left": '+190vh'}).hide();
+        $('#vrac').animate({"margin-left": '+190vh'}).hide();
         $('#class').show().animate({"margin-left": '0px'});
 });
 
